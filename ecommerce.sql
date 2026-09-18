@@ -26,7 +26,7 @@ create table products (
 	name VARCHAR(150) not null,
 	-- SKU là mã định danh duy nhất của sản phẩm
 	sku VARCHAR(100) not null,
-	avatar_url TEXT not null,
+	avatar_url VARCHAR(255) not null,
 	description TEXT not null,
 	price DECIMAL(15, 2) default 0.00,
 	stock_quantity INT default 0,
@@ -46,7 +46,7 @@ create table customers (
 	email VARCHAR(255) not null,
 	phone VARCHAR(10) not null,
 	address VARCHAR(255) not null,
-	avatar_url TEXT not null,
+	avatar_url VARCHAR(255) not null,
 	created_at TIMESTAMP default CURRENT_TIMESTAMP(),
 	
 	-- rang buoc email la duy nhat
